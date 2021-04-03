@@ -1,0 +1,3 @@
+[flake8.extension]
+FCS = flake8_complex_f_strings:Plugin
+
