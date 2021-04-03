@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pytest = "*"
 astpretty = "*"
 flake8-complex-f-strings = {editable = true, path = "."}
 
 [dev-packages]
-pytest = "*"
 flake8 = "*"
 
 [requires]
