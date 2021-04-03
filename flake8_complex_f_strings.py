@@ -19,6 +19,8 @@ class Visitor(ast.NodeVisitor):
                 all(isinstance(arg, ast.Constant) for arg in node.value.args)
                 or
                 all(isinstance(arg, ast.Name) for arg in node.value.args)
+                or
+                all(isinstance(arg, ast.Call) for arg in node.value.args)
             )
         ):
             self.issues.append((node.lineno, node.col_offset))
